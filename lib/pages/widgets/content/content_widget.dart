@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:health_ui/pages/widgets/sidebar/body/body_widget.dart';
-import 'package:health_ui/pages/widgets/sidebar/left_bar/left_bar_widget.dart';
-import 'package:health_ui/pages/widgets/sidebar/right_bar/right_bar_widget.dart';
+import 'package:health_ui/pages/widgets/content/body/body_widget.dart';
+import 'package:health_ui/pages/widgets/content/left_bar/left_bar_widget.dart';
+import 'package:health_ui/pages/widgets/content/right_bar/right_bar_widget.dart';
 
 class ContentWidget extends StatelessWidget {
   @override
