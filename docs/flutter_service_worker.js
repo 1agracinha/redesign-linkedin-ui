@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "e84301f531e819e9228f3edfb6ec3afe",
+  "assets/AssetManifest.json": "8f175cd38c46e5a4135876916b5ec4f3",
 "assets/assets/icons/calendar.png": "9d97c2c60f6170e5971ad1a42c922f6c",
 "assets/assets/icons/document.png": "bbd9ea5267b6073b3e1d974c6654e51d",
 "assets/assets/icons/home.png": "01df5f379d3975903f0b845231df15a1",
@@ -16,6 +16,7 @@ const RESOURCES = {
 "assets/assets/icons/video.png": "cdca7370190f71137d666acd4747a860",
 "assets/assets/icons/Work.png": "32b3e70b0a6358b54e7500ae08b21f04",
 "assets/assets/images/linkedin_logo.png": "3a8f1efec48c5d523ef3ff17ae7ccb16",
+"assets/assets/images/profile_cover.png": "7f8664c6b089191e9a883ebc7bb2ed6c",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/NOTICES": "67b46a24571b95db48236d60eb189747",
@@ -23,9 +24,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "a4f04fb52aa741c6dea43093b9b56355",
-"/": "a4f04fb52aa741c6dea43093b9b56355",
-"main.dart.js": "19608ce577d9dbc4822a87f500d732ee",
+"index.html": "94aab22b2df87be3a8c1f7c9c41bfacb",
+"/": "94aab22b2df87be3a8c1f7c9c41bfacb",
+"main.dart.js": "1d9fe2c7766a0f056240f746461ea8c1",
 "manifest.json": "dbc1d9234325c29895db8d7e05219ecc",
 "style.css": "ca831af9e5f6923b8f0be280810bac10",
 "version.json": "3fca705b6d315a7c9ea9a9898dd42866"
