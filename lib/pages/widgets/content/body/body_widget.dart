@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:health_ui/pages/widgets/sidebar/body/menu_write_post.dart';
-import 'package:health_ui/pages/widgets/sidebar/body/write_post_widget.dart';
+import 'package:health_ui/pages/widgets/content/body/menu_write_post.dart';
+import 'package:health_ui/pages/widgets/content/body/write_post_widget.dart';
+
 import 'package:health_ui/shared/rounded_container_widget.dart';
 
 class BodyWidget extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:health_ui/pages/widgets/content/left_bar/resume_profile/resume_profile_widget.dart';
 import 'package:health_ui/shared/rounded_container_widget.dart';
 
 class LeftBarWidget extends StatelessWidget {
@@ -6,7 +7,7 @@ class LeftBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Visibility(
       visible: MediaQuery.of(context).size.width < 1000
-          ? MediaQuery.of(context).size.width < 720
+          ? MediaQuery.of(context).size.width < 780
               ? false
               : true
           : true,
@@ -15,7 +16,7 @@ class LeftBarWidget extends StatelessWidget {
         children: [
           RoundedContainerWidget(
             height: 0.2,
-            child: Text("perfil"),
+            child: ResumeProfileWidget(),
           ),
           RoundedContainerWidget(
             height: 0.5,

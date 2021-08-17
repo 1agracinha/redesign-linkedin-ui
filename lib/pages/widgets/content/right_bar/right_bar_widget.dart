@@ -5,7 +5,7 @@ class RightBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Visibility(
-      visible: MediaQuery.of(context).size.width < 1000 ? false : true,
+      visible: MediaQuery.of(context).size.width < 1085 ? false : true,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
