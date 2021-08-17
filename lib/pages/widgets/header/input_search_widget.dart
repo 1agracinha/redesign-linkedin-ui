@@ -7,10 +7,10 @@ class InputSearchWidget extends StatelessWidget {
     return Align(
       alignment: Alignment.center,
       child: Container(
-        width: MediaQuery.of(context).size.width * 0.25,
+        width: MediaQuery.of(context).size.width * 0.24,
         child: Container(
           // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-          width: 180,
+          width: MediaQuery.of(context).size.width * 0.08,
           height: 30,
           child: Wrap(
             direction: Axis.horizontal,
@@ -19,9 +19,11 @@ class InputSearchWidget extends StatelessWidget {
                 child: Text(
                   "search for anything",
                   style: TextStyle(fontSize: 8),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                 ),
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                width: 180 * 0.8,
+                width: MediaQuery.of(context).size.width * 0.08,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(10),
@@ -36,13 +38,13 @@ class InputSearchWidget extends StatelessWidget {
                       bottomRight: Radius.circular(10)),
                   color: secondaryColor.withOpacity(0.48),
                 ),
+                alignment: Alignment.center,
                 child: Icon(
                   Icons.search,
-                  size: 18,
+                  size: MediaQuery.of(context).size.width * 0.01,
                   color: labelColor,
                 ),
-                padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                width: 180 * 0.2,
+                width: MediaQuery.of(context).size.width * 0.02,
                 height: 30,
               )
             ],

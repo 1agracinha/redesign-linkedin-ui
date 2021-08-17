@@ -20,7 +20,7 @@ class MenuBarWidget extends StatelessWidget {
               ),
               Container(
                 height: 1.5,
-                width: 20,
+                width: MediaQuery.of(context).size.width * 0.02,
                 color: primaryColor,
                 margin: EdgeInsets.only(top: 10),
               )
