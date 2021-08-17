@@ -36,7 +36,7 @@ class MenuWritePost extends StatelessWidget {
       bool isSendItem = false,
       BorderRadius radius = BorderRadius.zero}) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 10),
       decoration: BoxDecoration(
         borderRadius: radius,
         color:
