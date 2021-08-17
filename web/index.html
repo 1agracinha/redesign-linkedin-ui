@@ -23,42 +23,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="health_ui">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <title>health_ui</title>
   <link rel="manifest" href="manifest.json">
 </head>
-<style>
-  body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    perspective: 200px;
-  }
 
-  .loading {
-    width: 100px;
-    height: 100px;
-    background-color: #00ACFF;
-    border-radius: 12px;
-    animation: loading 2s linear infinite;
-  }
-
-  @keyframes loading {
-    0% {
-      transform: rotateX(0deg) rotateY(0deg);
-    }
-
-    50% {
-      transform: rotateX(0deg) rotateY(180deg);
-    }
-
-    100% {
-      transform: rotateX(180deg) rotateY(180deg);
-    }
-  }
-</style>
 
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
