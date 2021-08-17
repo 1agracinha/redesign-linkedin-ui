@@ -11,6 +11,7 @@ class HeaderWidget extends StatelessWidget {
       color: headerColor,
       padding: EdgeInsets.only(top: 5),
       height: 50,
+      width: MediaQuery.of(context).size.width,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -21,6 +22,7 @@ class HeaderWidget extends StatelessWidget {
             thickness: 2,
             indent: 7,
             endIndent: 7,
+            width: MediaQuery.of(context).size.width * 0.01,
           ),
           InputSearchWidget(),
         ],
