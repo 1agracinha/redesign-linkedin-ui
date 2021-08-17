@@ -7,28 +7,31 @@ import 'package:health_ui/theme/colors.dart';
 class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: headerColor,
-      padding: EdgeInsets.only(top: 5),
-      height: 50,
-      width: MediaQuery.of(context).size.width,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          LogoWidget(),
-          MenuBarWidget(),
-          Visibility(
-            visible: MediaQuery.of(context).size.width < 720 ? false : true,
-            child: VerticalDivider(
-              thickness: 2,
-              indent: 7,
-              endIndent: 7,
-              width: MediaQuery.of(context).size.width * 0.01,
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        color: headerColor,
+        padding: EdgeInsets.only(top: 5),
+        height: 50,
+        width: MediaQuery.of(context).size.width,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            LogoWidget(),
+            MenuBarWidget(),
+            Visibility(
+              visible: MediaQuery.of(context).size.width < 720 ? false : true,
+              child: VerticalDivider(
+                thickness: 2,
+                indent: 7,
+                endIndent: 7,
+                width: MediaQuery.of(context).size.width * 0.01,
+              ),
             ),
-          ),
-          InputSearchWidget(),
-        ],
+            InputSearchWidget(),
+          ],
+        ),
       ),
     );
   }

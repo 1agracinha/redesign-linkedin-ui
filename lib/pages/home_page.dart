@@ -8,13 +8,11 @@ import 'package:health_ui/pages/widgets/sidebar/right_bar/right_bar_widget.dart'
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          HeaderWidget(),
-          ContentWidget(),
-        ],
-      ),
+    return Stack(
+      children: [
+        ContentWidget(),
+        HeaderWidget(),
+      ],
     );
   }
 }
