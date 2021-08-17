@@ -7,7 +7,7 @@ class LeftBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Visibility(
       visible: MediaQuery.of(context).size.width < 1000
-          ? MediaQuery.of(context).size.width < 720
+          ? MediaQuery.of(context).size.width < 780
               ? false
               : true
           : true,
