@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -26,10 +27,45 @@
   <title>health_ui</title>
   <link rel="manifest" href="manifest.json">
 </head>
+<style>
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    perspective: 200px;
+  }
+
+  .loading {
+    width: 100px;
+    height: 100px;
+    background-color: #00ACFF;
+    border-radius: 12px;
+    animation: loading 2s linear infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    50% {
+      transform: rotateX(0deg) rotateY(180deg);
+    }
+
+    100% {
+      transform: rotateX(180deg) rotateY(180deg);
+    }
+  }
+</style>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <div class="loading"></div>
+  </div>
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -95,4 +131,5 @@
     }
   </script>
 </body>
+
 </html>
