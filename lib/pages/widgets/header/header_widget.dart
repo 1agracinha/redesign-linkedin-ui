@@ -18,11 +18,14 @@ class HeaderWidget extends StatelessWidget {
         children: [
           LogoWidget(),
           MenuBarWidget(),
-          VerticalDivider(
-            thickness: 2,
-            indent: 7,
-            endIndent: 7,
-            width: MediaQuery.of(context).size.width * 0.01,
+          Visibility(
+            visible: MediaQuery.of(context).size.width < 720 ? false : true,
+            child: VerticalDivider(
+              thickness: 2,
+              indent: 7,
+              endIndent: 7,
+              width: MediaQuery.of(context).size.width * 0.01,
+            ),
           ),
           InputSearchWidget(),
         ],
