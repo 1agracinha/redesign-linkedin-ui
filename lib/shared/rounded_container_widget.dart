@@ -11,7 +11,7 @@ class RoundedContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height * height,
-      padding: EdgeInsets.all(10),
+      // padding: EdgeInsets.all(10),
       margin: EdgeInsets.only(bottom: 20),
       width: MediaQuery.of(context).size.height * width,
       child: child,
